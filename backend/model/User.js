@@ -8,8 +8,8 @@ module.exports = mongoose.model('User', new mongoose.Schema({
     },
     email: {
         type: String,
-        unique: true,
-        trim: true
+        trim: true,
+        default: ""
     },
     createdAt: {
         type: Date,
@@ -23,9 +23,9 @@ module.exports = mongoose.model('User', new mongoose.Schema({
         type: Object,
         default: {},
     },
-    is_banned:{
+    is_banned: {
         type: Boolean,
-        default:false,
+        default: false,
     }
 }, { strict: false }))
 

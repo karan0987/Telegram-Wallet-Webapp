@@ -9,10 +9,8 @@ exports.deleteResponse = (ctx) => delete data[ctx.from.id]
 
 exports.getResponse = (ctx) => { return data[ctx.from.id] }
 
-exports.checkTarget = (ctx,target) => { 
-    console.log(data[ctx.from.id], target, (data[ctx.from.id]?.target == target))
-    return data[ctx.from.id]?.target == target 
-}
+exports.checkTarget = (ctx,target) =>{return data[ctx.from.id]?.target == target }
+
 
 
 //Activating all response handlers
