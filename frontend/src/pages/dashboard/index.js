@@ -1,11 +1,16 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import styles from '@/styles/dashboard.module.css'
+import TopNotch from '@/Components/TopNotch'
 
-export const index = ({webapp,userdata}) => {
+
+export const index = ({ webapp, userdata, darkmode }) => {
   return (
-    <div>
-      {JSON.stringify(userdata)}
-    </div>
+    <>
+      <div className={styles.homeContainer}>
+        <TopNotch/>
+      </div >
+    </>
   )
 }
 
@@ -13,6 +18,7 @@ export const index = ({webapp,userdata}) => {
 const mapStateToProps = (state) => ({
   webapp: state.Webapp,
   userdata: state.TgData,
+  darkmode: state.DarkMode
 })
 
 const mapDispatchToProps = {}
