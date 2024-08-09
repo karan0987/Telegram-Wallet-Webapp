@@ -1,5 +1,7 @@
-const darkMode = (data) => (dispatch) => {
-    return dispatch({ type: 'DARKMODE', payload: data });
+ const toggleDarkMode = (data) => (dispatch) => {
+    return dispatch({ type: 'TOGGLE_DARK_MODE', payload: data });
 };
 
-export default darkMode;
+export default toggleDarkMode
+
+

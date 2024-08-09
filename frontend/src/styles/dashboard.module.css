@@ -1,11 +1,34 @@
 .homeContainer {
-  height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(#5EC6F5,#007AFF);
+  padding-top: 13vh;
+  padding-left: 3vh;
+  padding-right: 3vh;
 }
 
 
+.homeContainer.light {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(#5EC6F5, #007AFF);
+}
 
+.section_1 {
+  display: flex;
+}
 
+.balanceTab {
+  background-color: #F5F5F5;
+  width: 135px;
+  height: 139px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
 
-
+.balanceTab p{
+  width: 107px;
+  height: 25px;
+  color: #B8B6B6;
+  font-size: 16px;
+  font-weight: bold;
+}
